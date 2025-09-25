@@ -1,18 +1,7 @@
-# compiled output
-/dist/
-/declarations/
-
-# dependencies
-/node_modules/
-
-# misc
-/.env*
-/.pnp*
-/.eslintcache
-/coverage/
-/npm-debug.log*
-/testem.log
-/yarn-error.log
-
-# broccoli-debug
-/DEBUG/
+__docs__
+node_modules
+dist
+.env
+.DS_Store
+.idea
+.vscode
