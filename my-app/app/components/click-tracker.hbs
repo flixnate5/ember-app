@@ -1,0 +1,15 @@
+<button class="click-tracker" type="button" {{on "click" (fn this.handleClick 1)}}>
+  {{yield}} {{this.clickCount}} times
+</button>
+<p>{{ this.multipliedCount }}</p>
+<BsButton @disabled={{true}}>Disabled Button</BsButton>
+<BsButton @type="success" @onClick={{fn this.handleClick 2}}>Double Click</BsButton>
+<BsButton @type="primary" @outline={{true}} @onClick={{fn this.handleClick 1}}>Click</BsButton>
+
+<BsButton
+@defaultText="Submit"
+@pendingText="Submitting information…"
+@fulfilledText="Data submitted successfully!!!"
+@onClick={{this.onClickAction}}>
+Submit
+</BsButton>

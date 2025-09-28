@@ -1,0 +1,41 @@
+{{!--<h1 class="page-title text-center">My Ember Application</h1>--}}
+
+{{!--<div class="text-center">--}}
+{{!--    <LinkTo @route="index">Home</LinkTo>--}}
+{{!--    <LinkTo @route="about">About</LinkTo>--}}
+{{!--  <LinkTo @route="clients.index">Clients</LinkTo>--}}
+{{!--</div>--}}
+
+<BsNav
+        @type="tabs"
+        @justified={{true}}
+        @stacked={{false}}
+        @fill={{false}} as |nav|
+>
+  <nav.item>
+    <nav.link-to @route="index">Home</nav.link-to>
+  </nav.item>
+  <nav.item>
+    <nav.link-to @route="about">About</nav.link-to>
+  </nav.item>
+  <nav.item>
+    <nav.link-to @route="clients.index" @query={{hash sortBy="name" }}>Clients    </nav.link-to>
+  </nav.item>
+  <nav.item>
+    <nav.link-to @route="sales.index" @query={{hash sortBy="name" }}>Sales    </nav.link-to>
+  </nav.item>
+
+  <nav.dropdown as |dd|>
+      <dd.toggle>Dropdown <span class="caret"></span></dd.toggle>
+
+    <dd.menu as |ddm|>
+        <ddm.item><ddm.linkTo @route="index">Index</ddm.linkTo>  </ddm.item>
+        <ddm.item><ddm.linkTo @route="login">Login</ddm.linkTo>  </ddm.item>
+        <ddm.item><ddm.linkTo @route="about">About</ddm.linkTo>  </ddm.item>
+        <ddm.item><ddm.linkTo @route="jobs.index">Jobs</ddm.linkTo>  </ddm.item>
+    </dd.menu>
+  </nav.dropdown>
+</BsNav>
+
+{{outlet}}
+

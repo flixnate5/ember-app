@@ -1,0 +1,11 @@
+{{page-title "Index"}}
+
+{{#each @model as |man| }}
+  <div class="job-item">
+    <h3>{{man.name}}</h3>
+  </div>
+{{else}}
+  <p>No jobs found.</p>
+{{/each}}
+
+{{outlet}}

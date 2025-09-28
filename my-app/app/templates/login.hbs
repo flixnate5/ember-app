@@ -1,0 +1,14 @@
+<div class="w-50 mx-auto mt-5">
+  <h4 class="text-center">Login</h4>
+  <BsForm @formLayout="vertical" @model={{this}} @onSubmit={{this.submit}} as |form|>
+    <form.element @controlType="email" @label="Email"
+                  @property="email" as |element|>
+      <element.control placeholder="Email" required/>
+    </form.element>
+    <form.element @controlType="password" @label="Password"
+                  @property="password" @helpText="Minimum 8 characters, one special character" as |element|>
+      <element.control placeholder="Password" required/>
+    </form.element>
+    <form.submitButton>Submit</form.submitButton>
+  </BsForm>
+</div>

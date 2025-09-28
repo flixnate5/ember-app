@@ -1,0 +1,43 @@
+export default [
+  {
+    id: 1,
+    name: 'John',
+    company_name: "John's Furniture",
+    email: 'john@example.com',
+    phone_number: '+91 98765 43210',
+    active: true,
+    salesman_id: 1,
+    backup_salesman_id: 2,
+
+  },
+  {
+    id: 2,
+    name: 'Robert',
+    company_name: 'Smart Boutique',
+    email: 'robert@example.com',
+    phone_number: '+91 98764 53210',
+    active: false,
+    salesman_id: 1,
+    backup_salesman_id: 2,
+  },
+  {
+    id: 3,
+    name: 'Michael',
+    company_name: 'Tech Solutions',
+    email: 'michel@jack.com',
+    phone_number: '+91 98763 54210',
+    active: true,
+    salesman_id: 2,
+    backup_salesman_id: 1,
+  },
+  {
+    id: 4,
+    name: 'David',
+    company_name: "David's Designs",
+    email: 'david@fp.com',
+    phone_number: '+91 98762 54310',
+    active: true,
+    salesman_id: 2,
+    backup_salesman_id: 1,
+  },
+];

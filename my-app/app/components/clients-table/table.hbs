@@ -1,0 +1,23 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Company Name</th>
+    <th>Email</th>
+    <th>Phone Number</th>
+    <th>...</th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each @clientsList as |client index|}}
+    <ClientsTable::Row @client={{client}} class="client-{{index}}">
+      <p>Some Dynamic Element for client {{client.name}} </p>
+    </ClientsTable::Row>
+  {{else}}
+    <tr>
+      <td colspan="5">No clients available</td>
+    </tr>
+
+  {{/each}}
+  </tbody>
+</table>

@@ -1,0 +1,13 @@
+{{page-title "Sales"}}
+
+<ul>
+{{#each this.model as |salesman| }}
+  <li>
+    <LinkTo @route="sales.view" @model={{salesman.id}}>{{salesman.name}}</LinkTo>
+  </li>
+{{else }}
+  <li>No salesmen found.</li>
+{{/each}}
+</ul>
+
+{{outlet}}

@@ -1,0 +1,27 @@
+<div class="text-center">
+  <b>{{this.testVar}}</b>
+  <h2>Client Details</h2>
+
+  <table class="table">
+    <tr>
+      <th>Name</th>
+      <td>{{input value=@model.name}}</td>
+    </tr>
+    <tr>
+      <th>Company Name</th>
+      <td>{{@model.company_name}}</td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td>{{@model.email}}</td>
+    </tr>
+    <tr>
+      <th>Phone Number</th>
+      <td>{{@model.phone_number}}</td>
+    </tr>
+    <tr>
+      <th>Salesman</th>
+      <td>{{@model.salesman.name}}</td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,16 @@
+<tr class="{{unless @client.active "bg-gray"}}" >
+    <td>{{this.getDisplayName @client}}</td>
+    <td>{{@client.company_name}}</td>
+    <td>{{@client.phone_number}}</td>
+    <td>{{@client.email}}</td>
+    <td>
+      {{#if @client.active}}
+        <LinkTo @route="clients.view"
+                @model="{{@client.id}}">View
+        </LinkTo>
+        | Edit | Delete
+      {{else}}
+        {{yield}}
+      {{/if}}
+    </td>
+</tr>

@@ -1,0 +1,33 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.page-title {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #333;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+.table {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #ddd;
+  margin-top: 30px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 5px;
+}
+
+.bg-gray {
+  color: #888;
+}
+
+

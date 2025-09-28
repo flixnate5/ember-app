@@ -1,0 +1,22 @@
+/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+.image {
+  &.large {
+    img {
+      width: 20rem;
+      height: auto;
+    }
+  }
+
+  img {
+    width: 10rem;
+    height: auto;
+  }
+}
+
+.rental {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}

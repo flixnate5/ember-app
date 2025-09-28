@@ -1,0 +1,17 @@
+<div class="text-center">
+  <h2>Salesmen</h2>
+
+  {{#if @model.length}}
+    <ul class="list-unstyled">
+      {{#each @model as |salesman|}}
+        <li>
+          {{#link-to 'salesmen.view' salesman.id}}
+            {{salesman.name}}
+          {{/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <p>No salesmen found.</p>
+  {{/if}}
+</div>
